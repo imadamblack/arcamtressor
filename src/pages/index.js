@@ -140,19 +140,28 @@ export default function Home() {
             <div
               className="flex lg:flex-wrap lg:w-full absolute lg:relative px-10 -right-8 -left-8 lg:ml-16 overflow-scroll snap-mandatory snap-x justify-start lg:justify-center">
               <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Gastos Médicos</div>
+                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Gastos
+                  Médicos
+                </div>
               </div>
               <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro Patrimonial</div>
+                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro
+                  Patrimonial
+                </div>
               </div>
               <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro de Vida</div>
+                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro de
+                  Vida
+                </div>
               </div>
               <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan de Retiro</div>
+                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan de
+                  Retiro
+                </div>
               </div>
               <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan Educación
+                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan
+                  Educación
                   Universitaria
                 </div>
               </div>
@@ -175,32 +184,30 @@ export default function Home() {
         image={i02}
       />
       <section className="reading-container my-16">
-        <p>
-          Ahora sí, qué vamos a hacer por ti.
-          <br/><br/>
-          Tu vida está llena de responsabilidades y decisiones más importantes
-          que preocuparte en vano por cosas que nosotros podemos controlar.
-          <br/><br/>
-          Por eso queremos que confíes en nosotros para asegurar tu bienestar y el de tu familia.
-          <br/><br/>
-          Alcanzar tu tranquilidad solo requiere 6 pasos:
-          <br/><br/>
-          <ol>
-            <li className="ft-1 mb-8">Tenemos una cita para conocernos y revisamos qué plan necesitas.</li>
-            <li className="ft-1 mb-8">Creamos propuestas de pólizas a tu medida, adaptadas a tus metas financieras y
-              familiares.
-            </li>
-            <li className="ft-1 mb-8">Una vez que elijas tu seguro, reunimos todos los documentos necesarios.</li>
-            <li className="ft-1 mb-8">Emitimos la póliza y te hacemos entrega detallando las especificaciones de la
-              misma.
-            </li>
-            <li className="ft-1 mb-8">Tendrás oportunidad de revisar la póliza con el fin de asegurar tu satisfacción.
-            </li>
-            <li className="ft-1 mb-8">Te brindamos apoyo continuo para resolver tus dudas y darte la tranquilidad de que
-              estás haciendo la mejor inversión
-            </li>
-          </ol>
-        </p>
+        Ahora sí, qué vamos a hacer por ti.
+        <br/><br/>
+        Tu vida está llena de responsabilidades y decisiones más importantes
+        que preocuparte en vano por cosas que nosotros podemos controlar.
+        <br/><br/>
+        Por eso queremos que confíes en nosotros para asegurar tu bienestar y el de tu familia.
+        <br/><br/>
+        Alcanzar tu tranquilidad solo requiere 6 pasos:
+        <br/><br/>
+        <ol>
+          <li className="ft-1 mb-8">Tenemos una cita para conocernos y revisamos qué plan necesitas.</li>
+          <li className="ft-1 mb-8">Creamos propuestas de pólizas a tu medida, adaptadas a tus metas financieras y
+            familiares.
+          </li>
+          <li className="ft-1 mb-8">Una vez que elijas tu seguro, reunimos todos los documentos necesarios.</li>
+          <li className="ft-1 mb-8">Emitimos la póliza y te hacemos entrega detallando las especificaciones de la
+            misma.
+          </li>
+          <li className="ft-1 mb-8">Tendrás oportunidad de revisar la póliza con el fin de asegurar tu satisfacción.
+          </li>
+          <li className="ft-1 mb-8">Te brindamos apoyo continuo para resolver tus dudas y darte la tranquilidad de que
+            estás haciendo la mejor inversión
+          </li>
+        </ol>
 
         <div className="flex flex-col justify-center items-center mt-16">
           <Link href="#contact">
@@ -225,7 +232,8 @@ export default function Home() {
           no solo te proteges de esos imprevistos
           sino que fortaleces tu situación financiera a largo plazo.
           <br/><br/>
-          Te ayudamos a proteger tu futuro con <b>planes desde $20,000 pesos anuales</b>, con el objetivo de que comiences
+          Te ayudamos a proteger tu futuro con <b>planes desde $20,000 pesos anuales</b>, con el objetivo de que
+          comiences
           a planificar tu vida desde hoy y no lo dejes para <b>tu yo del futuro</b>.
           <br/><br/>
           Puedes estar seguro de que el plan que armemos estará diseñado para que nosotros nos encarguemos de todo.
@@ -286,21 +294,24 @@ export default function Home() {
               <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Cobertura personalizada</h4>
-            <p className="text-center">Nos encargamos de encontrar el plan que se adapte mejor a tu economía y a tus necesidades para que puedas protegerte sin excusas.</p>
+            <p className="text-center">Nos encargamos de encontrar el plan que se adapte mejor a tu economía y a tus
+              necesidades para que puedas protegerte sin excusas.</p>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-neutral-200 shadow-xl p-16">
             <div className="relative w-1/2 pt-[30%]">
               <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Ahorro inteligente</h4>
-            <p className="text-center">Diseñamos planes que no solo te protegen, sino que también te ayudan a ahorrar y hacer crecer tu dinero.</p>
+            <p className="text-center">Diseñamos planes que no solo te protegen, sino que también te ayudan a ahorrar y
+              hacer crecer tu dinero.</p>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-neutral-200 shadow-xl p-16">
             <div className="relative w-1/2 pt-[30%]">
               <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Tranquilidad garantizada</h4>
-            <p className="text-center">Acceso a servicios de salud, asistencia legal y financiera de la más alta calidad y atención 24/7 para cualquier emergencia</p>
+            <p className="text-center">Acceso a servicios de salud, asistencia legal y financiera de la más alta calidad
+              y atención 24/7 para cualquier emergencia</p>
           </div>
         </div>
         <div className="reading-container">

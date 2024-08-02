@@ -24,6 +24,7 @@ export const info = {
     state: "Jalisco",
   },
   optInWebhook: '',
+  surveyWebhook: '',
   surveyRedirect: '',
   privacyNotice: "/aviso-privacidad",
   termsConditions: "/aviso-privacidad",

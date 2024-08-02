@@ -40,6 +40,7 @@ export default function OptInForm({lastClick = 'fullScroll'}) {
           {email: data.email, phone: data.phone, externalID: id},
         );
         setCookie('lead', {...data, id});
+        router.push(`/survey?id=${id}`);
       })
       .catch(() => {
         fbEvent(
@@ -47,16 +48,8 @@ export default function OptInForm({lastClick = 'fullScroll'}) {
           {email: data.email, phone: data.phone, externalID: ''},
         );
         setCookie('lead', {...data});
-      })
-      .then(() => {
-        if (info.surveyRedirect !== '') {
-          const forwardLink = document.createElement('a');
-          forwardLink.href = info.surveyRedirect;
-          forwardLink.target = '_blank';
-          forwardLink.click();
-        }
         router.push(`/thankyou`);
-      });
+      })
   };
 
   return (
@@ -91,28 +84,13 @@ export default function OptInForm({lastClick = 'fullScroll'}) {
         className={errors.phone && '!bg-red-200'}
         onKeyDown={restrictNumber}
         placeholder="Teléfono de WhatsApp"/>
-      <input
-        {...register(
-          'city',
-          {required: true,},
-        )}
-        className={errors.city && '!bg-red-200'}
-        placeholder="En qué ciudad vives?"/>
-      <input
-        {...register(
-          'age',
-          {required: true}
-        )}
-        className={errors.age && '!bg-red-200'}
-        onKeyDown={restrictNumber}
-        placeholder="Cuántos años tienes?"/>
 
       <button
         disabled={sending}
         className={`w-full ${sending ? '!bg-transparent' : 'hover:!bg-brand-3'}`}
       >{
         !sending
-          ? 'Contactar vía WhatsApp →'
+          ? 'Comenzar →'
           : <span className="material-symbols-outlined animate-spin">progress_activity</span>
       }</button>
 
