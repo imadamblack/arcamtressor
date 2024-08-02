@@ -10,15 +10,7 @@ import i03 from '../../public/landing/03.png';
 import i04 from '../../public/landing/04.png';
 import i05 from '../../public/landing/05.png';
 import i06 from '../../public/landing/06.png';
-import it01 from '../../public/landing/t01.png';
-import it02 from '../../public/landing/t02.png';
-import it03 from '../../public/landing/t03.png';
 import ico01 from '../../public/landing/icons/ico-01.png';
-import ico02 from '../../public/landing/icons/ico-botellas-5.png';
-import ico03 from '../../public/landing/icons/ico-botellas-caja.png';
-import ico04 from '../../public/landing/icons/ico-etiqueta.png';
-import ico05 from '../../public/landing/icons/ico-crecimiento.png';
-import ico06 from '../../public/landing/icons/ico-entrega.png';
 import Faqs from '../components/faqs';
 
 export default function Home() {
@@ -346,7 +338,7 @@ export default function Home() {
                 Ya llegaste hasta acá, <br/>
                 ya le dedicaste unos minutos de tu valioso tiempo a leer esta información.
                 <br/><br/>
-                Regálanos unos datos y mándanos un WhatsApp.
+                Regálanos unos datos y agenda una sesión con nosotros.
               </p>
             </div>
             <OptInForm
