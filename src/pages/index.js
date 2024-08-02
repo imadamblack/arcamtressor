@@ -13,7 +13,7 @@ import i06 from '../../public/landing/06.png';
 import it01 from '../../public/landing/t01.png';
 import it02 from '../../public/landing/t02.png';
 import it03 from '../../public/landing/t03.png';
-import ico01 from '../../public/landing/icons/ico-botella.png';
+import ico01 from '../../public/landing/icons/ico-01.png';
 import ico02 from '../../public/landing/icons/ico-botellas-5.png';
 import ico03 from '../../public/landing/icons/ico-botellas-caja.png';
 import ico04 from '../../public/landing/icons/ico-etiqueta.png';
@@ -282,22 +282,22 @@ export default function Home() {
       <section className="container my-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">
           <div className="relative flex flex-col items-center rounded-2xl border border-neutral-200 shadow-xl p-16">
-            <div className="relative w-1/2 pt-[60%]">
-              <Image src={ico04} layout="fill" objectFit="contain"/>
+            <div className="relative w-1/2 pt-[30%]">
+              <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Cobertura personalizada</h4>
             <p className="text-center">Nos encargamos de encontrar el plan que se adapte mejor a tu economía y a tus necesidades para que puedas protegerte sin excusas.</p>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-neutral-200 shadow-xl p-16">
-            <div className="relative w-1/2 pt-[60%]">
-              <Image src={ico05} layout="fill" objectFit="contain"/>
+            <div className="relative w-1/2 pt-[30%]">
+              <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Ahorro inteligente</h4>
             <p className="text-center">Diseñamos planes que no solo te protegen, sino que también te ayudan a ahorrar y hacer crecer tu dinero.</p>
           </div>
           <div className="relative flex flex-col items-center rounded-2xl border border-neutral-200 shadow-xl p-16">
-            <div className="relative w-1/2 pt-[60%]">
-              <Image src={ico06} layout="fill" objectFit="contain"/>
+            <div className="relative w-1/2 pt-[30%]">
+              <Image src={ico01} layout="fill" objectFit="contain"/>
             </div>
             <h4 className="text-center my-8">Tranquilidad garantizada</h4>
             <p className="text-center">Acceso a servicios de salud, asistencia legal y financiera de la más alta calidad y atención 24/7 para cualquier emergencia</p>
