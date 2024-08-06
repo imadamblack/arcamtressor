@@ -35,13 +35,13 @@ export default function Home() {
         className={`relative min-h-[80vh] w-full flex flex-col justify-center items-center bg-cover bg-center`}
         style={{backgroundImage: `url(/landing/00.png)`}}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 z-10"/>
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-60 z-10"/>
 
-        <div className="container w-full flex flex-col md:items-start text-center md:text-left text-white z-10 p-8">
+        <div className="container w-full flex flex-col md:items-start text-left text-white z-10 p-8">
           <h1
             className="md:w-2/3 relative font-medium ft-9 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            Imagina un futuro donde la preocupación de un imprevisto no exista.<br/>
-            Tu futuro es más que una apuesta.
+            Aún crees que el gobierno te va a mantener en tu vejez...<br/>
+            y que Santa Claus cabe por la chimenea.
           </h1>
           <p className="md:w-2/3 ft-2 font-medium my-12">Comienza a asegurar tu futuro financiero</p>
           <div className="flex flex-col justify-center items-center md:items-start mt-12">
