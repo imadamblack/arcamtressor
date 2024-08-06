@@ -12,9 +12,14 @@ import i05 from '../../public/landing/05.png';
 import i06 from '../../public/landing/06.png';
 import ico01 from '../../public/landing/icons/ico-01.png';
 import Faqs from '../components/faqs';
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const [lastClick, setLastClick] = useState('fullScroll');
+  const router = useRouter();
+
+  const {query: {product}} = router;
+  console.log('product', product);
 
   useEffect(() => {
     scrollDepth({
@@ -40,8 +45,12 @@ export default function Home() {
         <div className="container w-full flex flex-col md:items-start text-left text-white z-10 p-8">
           <h1
             className="md:w-2/3 relative font-medium ft-9 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            Un seguro puede costar menos del 10% de tu sueldo...<br/>
-            un accidente sin seguro, te cuesta todos tus ahorros.
+            {product === 'gmm'
+              ? `Un seguro de gastos médicos puede costar menos del 10% de tu sueldo... un accidente sin seguro, te cuesta todos tus ahorros.`
+              :  product === 'retiro'
+                ? `Imagina no poder disfrutar de tu vejez y depender de alguien más por no haber ahorrado desde tus 30s`
+                : `Tener un seguro es asegurar tu lana de viejo y no perder todo tu ahorro en caso de un accidente`
+            }
           </h1>
           <p className="md:w-2/3 ft-2 font-medium my-12">Comienza a asegurar tu futuro financiero</p>
           <div className="flex flex-col justify-center items-center md:items-start mt-12">
