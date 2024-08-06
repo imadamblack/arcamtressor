@@ -26,7 +26,7 @@ export default function Home() {
   const cta = {
     main: 'Solicita tu asesoría gratuita',
     // description: 'Solicita una asesoría de nuestro ingeniero sin costo',
-    description: 'Agenda una asesoría patrimonial sin costo.',
+    description: 'Resuelve todas tus dudas sobre las opciones de tu seguro.',
   };
 
   return (
@@ -40,8 +40,8 @@ export default function Home() {
         <div className="container w-full flex flex-col md:items-start text-left text-white z-10 p-8">
           <h1
             className="md:w-2/3 relative font-medium ft-9 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            Aún crees que el gobierno te va a mantener en tu vejez...<br/>
-            y que Santa Claus cabe por la chimenea.
+            Un seguro puede costar menos del 10% de tu sueldo...<br/>
+            un accidente sin seguro, te cuesta todos tus ahorros.
           </h1>
           <p className="md:w-2/3 ft-2 font-medium my-12">Comienza a asegurar tu futuro financiero</p>
           <div className="flex flex-col justify-center items-center md:items-start mt-12">
@@ -331,7 +331,7 @@ export default function Home() {
         <div className="container">
           <div className="w-full md:w-1/2 mx-auto">
             <h2 className="font-semibold text-white tracking-wide">
-              Listo, es momento de tener tu primer asesoría patrimonial gratuita
+              Listo, obtén una asesoría gratuita para comenzar a asegurar tu futuro
             </h2>
             <div className="mt-20 mb-12">
               <p className="ft-1 text-white">
