@@ -5,24 +5,24 @@ export default function Faqs() {
 
   const questions = [
     {
-      q: "¿Por qué necesito un seguro si ya tengo seguro social?",
-      a: "Contar con un seguro te asegura tu bienestar completo ya que en muchas ocasiones el seguro social no cuenta con las herramientas o atención que requieres ante una emergencia."
+      q: "¿Qué pasa si no puedo seguir aportando al plan?",
+      a: "No hay problema. Nuestro plan es flexible y se ajusta a tus circunstancias. Puedes reducir o pausar tus aportes sin penalización."
     },
     {
-      q: "¿Cómo puedo estar seguro de que recibiré ayuda rápida en caso de emergencia?",
-      a: "Tu bienestar es lo más importante para nosotros, por eso nuestro equipo te brinda atención inmediata para atender cualquier solicitud."
+      q: "¿Cómo sé que mi dinero está seguro?",
+      a: "Trabajamos con las principales aseguradoras del país, garantizando que tu dinero está protegido y en las mejores manos."
     },
     {
-      q: "¿Qué ventajas fiscales obtengo al contratar un seguro con Arcam Tressor?",
-      a: "Al contratar cualquier seguro con nosotros lo podrás deducir de tus impuestos."
+      q: "¿Qué beneficios fiscales obtengo?",
+      a: "Además de asegurar tu futuro, nuestros planes te permiten deducir impuestos, lo que significa que ahorras más de lo que inviertes."
     },
     {
-      q: "¿Es complicado el proceso para contratar una póliza?",
-      a: "Sabemos lo valioso que es tu tiempo, por eso nos aseguramos de que todo sea claro y fácil de entender para que puedas contar con tu seguro lo más pronto posible."
+      q: "¿Puedo personalizar mi plan de acuerdo a mis necesidades?",
+      a: "Absolutamente. Cada plan se diseña específicamente para ti, con total flexibilidad en aportaciones y coberturas."
     },
     {
-      q: "¿Cuál es el primer paso para contratar un seguro con ustedes?",
-      a: "Es muy sencillo, llena el formulario que aparece aquí abajo y nos pondremos en contacto contigo para asesorarte lo más pronto posible."
+      q: "¿Qué ocurre si necesito retirar dinero antes del tiempo pactado?",
+      a: "Dependiendo del plan, existen opciones para retiros parciales sin penalización, asegurándote siempre acceso a tus fondos cuando lo necesites."
     }
   ]
 

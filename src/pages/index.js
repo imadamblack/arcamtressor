@@ -4,11 +4,10 @@ import Link from 'next/link';
 import OptInForm from '../components/form/opt-in-form';
 import { useEffect, useState } from 'react';
 import scrollDepth from '../utils/scrollDepth';
-import i01 from '../../public/landing/01.png';
 import i02 from '../../public/landing/02.png';
 import i03 from '../../public/landing/03.png';
-import i04 from '../../public/landing/04.png';
-import i05 from '../../public/landing/05.png';
+import i04 from '../../public/landing/10.jpg';
+import i05 from '../../public/landing/12.jpg';
 import i06 from '../../public/landing/06.png';
 import ico01 from '../../public/landing/icons/ico-01.png';
 import Faqs from '../components/faqs';
@@ -29,9 +28,9 @@ export default function Home() {
   });
 
   const cta = {
-    main: 'Solicita tu asesoría gratuita',
+    main: 'Agenda una asesoría',
     // description: 'Solicita una asesoría de nuestro ingeniero sin costo',
-    description: 'Resuelve todas tus dudas sobre las opciones de tu seguro.',
+    description: 'Resuelve todas tus dudas y maximiza tus ahorros para el retiro.',
   };
 
   return (
@@ -45,14 +44,12 @@ export default function Home() {
         <div className="container w-full flex flex-col md:items-start text-left text-white z-10 p-8">
           <h1
             className="md:w-2/3 relative font-medium ft-9 text-white [text-shadow:_2px_2px_0_rgb(0_0_0_/_20%)]">
-            {product === 'gmm'
-              ? `Un seguro de gastos médicos puede costar menos del 10% de tu sueldo... un accidente sin seguro, te cuesta todos tus ahorros.`
-              :  product === 'retiro'
-                ? `Imagina no poder disfrutar de tu vejez y depender de alguien más por no haber ahorrado desde tus 30s`
-                : `Tener un seguro es asegurar tu lana de viejo y no perder todo tu ahorro en caso de un accidente`
-            }
+            Olvídate de la pensión que nunca tendrás.<br/>Mejor asegura un retiro digno y sin dramas con un plan de
+            ahorro.
           </h1>
-          <p className="md:w-2/3 ft-2 font-medium my-12">Comienza a asegurar tu futuro financiero</p>
+          <p className="md:w-2/3 ft-2 font-medium mt-12">Contratación en línea</p>
+          <p className="md:w-2/3 ft-2 font-medium">Atención personalizada</p>
+          <p className="md:w-2/3 ft-2 font-medium mb-12">Acompañamiento 24/7</p>
           <div className="flex flex-col justify-center items-center md:items-start mt-12">
             <Link href="#contact">
               <a onClick={() => setLastClick('hero')} className="button mb-4">{cta.main}</a>
@@ -75,15 +72,10 @@ export default function Home() {
           <p className="-ft-2" style={{marginBlockEnd: 0}}>Conoce los principales beneficios en 4 min</p>
         </div>
         <p className="ft-2">
-          Queremos ser el apoyo necesario frente a eventos inesperados,
-          como emergencias médicas o siniestros de todo tipo.
-          <br/><br/>
-          Y tu soporte para que logres asegurar la educación universitaria de tus hijos o un buen ahorro para tu retiro.
-          <br/><br/>
-          Para que tú te dediques a cumplir tus objetivos financieros y a celebrar los momentos felices con tu familia
-          como la llegada de un nuevo integrante.
-          <br/><br/>
-          Sin que te tengas que descapitalizar.
+          Entendemos que el mejor plan de ahorro es aquel que te deja dormir tranquilo,<br/>
+          aquel que de viejo te deje feria para no tener que comer Maruchans todos los días.<br/><br/>
+          El chiste es que tengas un Plan de Ahorro para tu Retiro, que se adapte a tus posibilidades y metas.<br/><br/>
+          Y que te cuides de asesorías y planes chafas que te van a querer vender nomás por su comisión.
         </p>
         <div className="flex flex-col justify-center items-center">
           <Link href="#contact">
@@ -94,23 +86,38 @@ export default function Home() {
       </section>
 
       <Blockbuster
+        anchor="#benefits"
         overhead="Beneficios"
-        title="No se trata de venderte un seguro, sino de asegurar tu bienestar completo."
+        title="Estamos en contra de la miseria de las afores, apuéstale a tu tranquilidad."
         image={i05}
       />
-      <section className="reading-container my-16">
-        <p>Estamos de acuerdo que más vale póliza en mano que cientos volando… o cómo va?</p>
-        <p className="font-bold">Te voy a dar 3 razones de por qué debes contratar una póliza de gastos médicos o ahorro
-          patrimonial</p>
-        <h3>Proteges tu dinero</h3>
-        <p>Más vale pagar un deducible en un accidente que puede surgir en cualquier momento,
-          a tener que sacar todo el dinero del banco, vender tus activos o pedir que te adelanten la tanda.</p>
-        <h3>Tu YO del futuro te lo va a agradecer</h3>
-        <p>A ver, si empezaste a cotizar en el IMSS antes del 97, probablemente esto no es para ti.
-          Pero si no, un plan de ahorro para el retiro puede ser la decisión más inteligente de tu vida.</p>
-        <h3>Garantizas tu tranquilidad</h3>
-        <p>Tener una póliza de gastos médicos y un ahorro patrimonial te va a permitir disfrutar de la vida, andar de
-          viaje, practicando tu deporte favorito y todas esas cosas que te emocionan, sin miedo.</p>
+      <section className="my-16">
+        <p className="reading-container">
+          Sé que la incertidumbre te quita el sueño, por eso seleccionamos planes de
+          ahorro que te aseguren tener el control de tu futuro.
+          <br/><br/>
+          La solución que te proponemos tiene tres pilares clave:</p>
+        <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="p-12 bg-white border border-neutral-200 rounded-xl shadow-lg">
+          <h3 className="mb-8">Flexibilidad Total</h3>
+          <p>Puedes ajustar tus aportes cuando lo necesites. ¿Tu negocio va viento en popa? Aumenta el ahorro. ¿Las
+            cosas
+            están flojas? Baja la aportación sin penalizaciones.</p>
+          </div>
+          <div className="p-12 bg-white border border-neutral-200 rounded-xl shadow-lg">
+          <h3 className="mb-8">Protección Ante Todo</h3>
+          <p>No importa si hay imprevistos, tu plan está diseñado para que tu lana esté protegida en cualquier
+            situación.
+            Porque aquí no jugamos con tu seguridad.</p>
+          </div>
+          <div className="p-12 bg-white border border-neutral-200 rounded-xl shadow-lg">
+          <h3 className="mb-8">Personalización Real</h3>
+          <p>Sé que no hay dos personas iguales, por eso adaptamos el plan a tus necesidades específicas. Nada de
+            fórmulas
+            mágicas ni moldes rígidos.</p>
+          </div>
+        </div>
+
         <div>
           <div className="flex flex-col justify-center items-center">
             <Link href="#contact">
@@ -122,95 +129,71 @@ export default function Home() {
       </section>
 
       <Blockbuster
-        overhead="Productos"
-        title="A ver, nosotros sí te protegemos en todo momento"
-        image={i01}
-      />
-      <section className="container my-16">
-        <div className="reading-container">
-          <p>Conoce los productos con los que podemos ayudarte a tener futuro sin preocupaciones</p>
-        </div>
-        <div className="relative w-full">
-          <div className="absolute lg:hidden bottom-4 right-4 z-10 animate-pulse">
-            <div className="material-icons ft-10">arrow_forward</div>
-          </div>
-          <div className="absolute lg:hidden bottom-4 left-4 z-10 animate-pulse">
-            <div className="material-icons ft-10">arrow_backward</div>
-          </div>
-          <div className="mt-12 relative w-full h-[16rem] lg:h-auto">
-            <div
-              className="flex lg:flex-wrap lg:w-full absolute lg:relative px-10 -right-8 -left-8 lg:ml-16 overflow-scroll snap-mandatory snap-x justify-start lg:justify-center">
-              <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Gastos
-                  Médicos
-                </div>
-              </div>
-              <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro
-                  Patrimonial
-                </div>
-              </div>
-              <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Seguro de
-                  Vida
-                </div>
-              </div>
-              <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan de
-                  Retiro
-                </div>
-              </div>
-              <div className="min-w-[36rem] md:w-1/3 snap-center p-4">
-                <div className="w-full bg-brand-3 rounded-xl p-12 ft-3 font-bold text-center text-gray-800">Plan
-                  Educación
-                  Universitaria
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="reading-container">
-          <div className="flex flex-col justify-center items-center">
-            <Link href="#contact">
-              <a onClick={() => setLastClick('products')} className="button mb-4">{cta.main}</a>
-            </Link>
-            <p className="-ft-2 text-center">{cta.description}</p>
-          </div>
-        </div>
-      </section>
-
-      <Blockbuster
+        anchor="#process"
         overhead="Proceso"
-        title="Más que una agencia de seguros: somos expertos en proteger tu vida y tus finanzas."
-        image={i02}
+        title="Somos expertos en convertir planes de ahorro en algo tan simple como preparar un café."
+        image={i03}
       />
-      <section className="reading-container my-16">
-        Ahora sí, qué vamos a hacer por ti.
-        <br/><br/>
-        Tu vida está llena de responsabilidades y decisiones más importantes
-        que preocuparte en vano por cosas que nosotros podemos controlar.
-        <br/><br/>
-        Por eso queremos que confíes en nosotros para asegurar tu bienestar y el de tu familia.
-        <br/><br/>
-        Alcanzar tu tranquilidad solo requiere 6 pasos:
-        <br/><br/>
-        <ol>
-          <li className="ft-1 mb-8">Tenemos una cita para conocernos y revisamos qué plan necesitas.</li>
-          <li className="ft-1 mb-8">Creamos propuestas de pólizas a tu medida, adaptadas a tus metas financieras y
-            familiares.
-          </li>
-          <li className="ft-1 mb-8">Una vez que elijas tu seguro, reunimos todos los documentos necesarios.</li>
-          <li className="ft-1 mb-8">Emitimos la póliza y te hacemos entrega detallando las especificaciones de la
-            misma.
-          </li>
-          <li className="ft-1 mb-8">Tendrás oportunidad de revisar la póliza con el fin de asegurar tu satisfacción.
-          </li>
-          <li className="ft-1 mb-8">Te brindamos apoyo continuo para resolver tus dudas y darte la tranquilidad de que
-            estás haciendo la mejor inversión
-          </li>
-        </ol>
+      <section className="my-16">
+        <p className="reading-container">
+          ¿Te preocupa no saber qué pasará con tu dinero? <br/><br/>Tranquilo, eso se resuelve en 5 pasos:
+        </p>
 
-        <div className="flex flex-col justify-center items-center mt-16">
+        <div className="container">
+          <ul className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <li className="flex flex-col w-full h-full items-center">
+              <p
+                className="h-16 w-16 rounded-full bg-blue-100 flex justify-center items-center mb-8 text-gray-800 font-bold">1</p>
+              <div
+                className="w-full text-center lg:text-left p-8 text-brand-1 border border-blue-400 bg-blue-50 shadow-lg rounded-2xl flex-grow">
+                <h3 className="mb-8">Evaluamos y cotizamos</h3>
+                <p>Evaluamos juntos tus necesidades y capacidad real de ahorro para cotizar tu plan.</p>
+              </div>
+            </li>
+            <li className="flex flex-col w-full h-full items-center">
+              <p
+                className="h-16 w-16 rounded-full bg-blue-100 flex justify-center items-center mb-8 text-gray-800 font-bold">2</p>
+              <div
+                className="w-full text-center lg:text-left p-8 text-brand-1 border border-blue-400 bg-blue-50 shadow-lg rounded-2xl flex-grow">
+                <h3 className="mb-8">Asesoría de estrategia</h3>
+                <p>Diseñamos un par de estrategias que te muestren cómo vas a llegar a tus objetivos de ahorro.</p>
+              </div>
+            </li>
+            <li className="flex flex-col w-full h-full items-center">
+              <p
+                className="h-16 w-16 rounded-full bg-blue-100 flex justify-center items-center mb-8 text-gray-800 font-bold">3</p>
+              <div
+                className="w-full text-center lg:text-left p-8 text-brand-1 border border-blue-400 bg-blue-50 shadow-lg rounded-2xl flex-grow">
+                <h3 className="mb-8">Contratación</h3>
+                <p>Nuestro equipo se encarga de que tu proceso de contratación sea totalmente transparente.</p>
+              </div>
+            </li>
+            <li className="flex flex-col w-full h-full items-center">
+              <p
+                className="h-16 w-16 rounded-full bg-blue-100 flex justify-center items-center mb-8 text-gray-800 font-bold">4</p>
+              <div
+                className="w-full text-center lg:text-left p-8 text-brand-1 border border-blue-400 bg-blue-50 shadow-lg rounded-2xl flex-grow">
+                <h3 className="mb-8">Entrega de póliza</h3>
+                <p>Así de simple como suena, te entregamos tu póliza de ahorro.</p>
+              </div>
+            </li>
+            <li className="flex flex-col w-full h-full items-center">
+              <p
+                className="h-16 w-16 rounded-full bg-blue-100 flex justify-center items-center mb-8 text-gray-800 font-bold">5</p>
+              <div
+                className="w-full text-center lg:text-left p-8 text-brand-1 border border-blue-400 bg-blue-50 shadow-lg rounded-2xl flex-grow">
+                <h3 className="mb-8">Seguimiento de tu plan</h3>
+                <p>Si requieres modificaciones, aclaraciones o cualquier tipo de ayuda, nosotros nos encargamos.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p className="reading-container">
+          La experiencia nos ha enseñado que un buen plan es aquel que te permite disfrutar del presente sin
+          perder de vista el futuro.
+        </p>
+
+        <div className="flex flex-col justify-center items-center my-16">
           <Link href="#contact">
             <a onClick={() => setLastClick('process')} className="button mb-4">{cta.main}</a>
           </Link>
@@ -220,25 +203,16 @@ export default function Home() {
       </section>
 
       <Blockbuster
+        anchor="#target"
         overhead="Target"
-        title="Si no quieres estar viviendo al día a tus 50, 60 o 70 años, es tu momento de contactarnos."
-        image={i03}
+        title="Estás cansado de escuchar cómo todo el mundo tiene un plan para el retiro, menos tú."
+        image={i02}
       />
-      <section className="reading-container my-16">
-        <p>
-          Afrontar una emergencia sin estar preparado, te puede llevar a tomar decisiones
-          que pongan en riesgo tu patrimonio.
-          <br/><br/>
-          En cambio, con un seguro adecuado y a tu medida,
-          no solo te proteges de esos imprevistos
-          sino que fortaleces tu situación financiera a largo plazo.
-          <br/><br/>
-          Te ayudamos a proteger tu futuro con <b>planes desde $20,000 pesos anuales</b>, con el objetivo de que
-          comiences
-          a planificar tu vida desde hoy y no lo dejes para <b>tu yo del futuro</b>.
-          <br/><br/>
-          Puedes estar seguro de que el plan que armemos estará diseñado para que nosotros nos encarguemos de todo.
-        </p>
+      <section className="reading-container text-center my-16">
+        <h3 className="ft-6">Si andas en tus 30's y puedes ahorrar unos $2,500mxn al mes, vas a retirarte a tus 65 con
+          más de $3mdp</h3>
+        <p className="ft-0">* esta información puede tener ligeras variaciones, te sugerimos cotizar para tener una
+          estimación más certera.</p>
         <div className="flex flex-col justify-center items-center mt-16">
           <Link href="#contact">
             <a onClick={() => setLastClick('target')} className="button mb-4">{cta.main}</a>
@@ -247,45 +221,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/*<Blockbuster*/}
-      {/*  overhead="Testimonios"*/}
-      {/*  title="Déjanos proteger tu futuro, te prometemos cuidarte mejor de lo que tú lo harías."*/}
-      {/*  image={i05}*/}
-      {/*/>*/}
-      {/*<section className="container my-16">*/}
-      {/*  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch mb-16">*/}
-      {/*    <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">*/}
-      {/*      <div className="relative w-2/3 pt-[100%]">*/}
-      {/*        <Image src={ico04} layout="fill" objectFit="contain"/>*/}
-      {/*      </div>*/}
-      {/*      <h4 className="text-center my-8">Recibe descuentos a partir de la compra de 5 lts</h4>*/}
-      {/*    </div>*/}
-      {/*    <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">*/}
-      {/*      <div className="relative w-2/3 pt-[100%]">*/}
-      {/*        <Image src={ico05} layout="fill" objectFit="contain"/>*/}
-      {/*      </div>*/}
-      {/*      <h4 className="text-center my-8">Resultados visibles en 48 hrs</h4>*/}
-      {/*    </div>*/}
-      {/*    <div className="relative flex flex-col items-center rounded-2xl border border-brand-6 p-16">*/}
-      {/*      <div className="relative w-2/3 pt-[100%]">*/}
-      {/*        <Image src={ico06} layout="fill" objectFit="contain"/>*/}
-      {/*      </div>*/}
-      {/*      <h4 className="text-center my-8">Envío gratis a toda la República Mexicana</h4>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*  <div className="reading-container">*/}
-      {/*    <div className="flex flex-col justify-center items-center">*/}
-      {/*      <Link href="#contact">*/}
-      {/*        <a onClick={() => setLastClick('testimonials')} className="button mb-4">{cta.main}</a>*/}
-      {/*      </Link>*/}
-      {/*      <p className="-ft-2 text-center">{cta.description}</p>*/}
-      {/*    </div>*/}
-      {/*  </div>*/}
-      {/*</section>*/}
-
       <Blockbuster
+        anchor="#guarantees"
         overhead="Garantías"
-        title="Tu dinero, tu salud y tu tranquilidad están asegurados."
+        title="Aquí no te dejamos solo después de la compra, es más siempre contestamos en menos de 15min"
         image={i04}
       />
       <section className="container my-16">
@@ -327,6 +266,7 @@ export default function Home() {
 
 
       <Blockbuster
+        anchor="#faqs"
         overhead="Preguntas frecuentes"
         title="Si tienes dudas, probablemente estén aquí"
         image={i06}
