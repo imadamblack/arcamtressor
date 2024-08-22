@@ -14,6 +14,7 @@ const formSteps = [
     title: `Ok, prometo hacer esto lo más rápido y sencillo posible, <br/>son solo 4 preguntas.`,
     description: '¿Cuántos años tienes?',
     type: 'number',
+    inputOptions: {required: true}
   },
   {
     name: 'insurance',
@@ -25,6 +26,20 @@ const formSteps = [
       {value: 'no_insurance', label: 'No'},
     ],
     cols: 2,
+    inputOptions: {required: true}
+  },
+  {
+    name: 'budget',
+    title: '¿En que rango de ahorro mensual te sentirías cómodo?',
+    description: 'Selecciona una opción por favor',
+    type: 'radio',
+    options: [
+      {value: '3000-5000', label: 'De $3,000 a $5,000 mxn'},
+      {value: '5000-10000', label: 'De $5,000 a $10,000 mxn'},
+      {value: '10000+', label: 'Más de $10,000'},
+    ],
+    cols: 1,
+    inputOptions: {required: true}
   },
   {
     name: 'interest',
@@ -32,27 +47,28 @@ const formSteps = [
     description: 'Puedes seleccionar uno o varios',
     type: 'checkbox',
     options: [
-      {value: 'gmm', label: 'Gastos Médicos Mayores'},
+      {value: 'retiro', label: 'Plan de Retiro'},
       {value: 'patrimonial', label: 'Seguro Patrimonial'},
       {value: 'vida', label: 'Seguro de Vida'},
-      {value: 'retiro', label: 'Plan de Retiro'},
+      {value: 'gmm', label: 'Gastos Médicos Mayores'},
       {value: 'educacion', label: 'Plan de Educación Universitaria'},
     ],
     cols: 1,
+    inputOptions: {required: true}
   },
-  {
-    name: 'commitment',
-    title: '¿Prometes atender a la sesión que estás a punto de agendar?',
-    description: 'Es que no nos gusta que nos dejen plantados',
-    type: 'radio',
-    inputOptions: {required: 'Selecciona una opción'},
-    options: [
-      {value: 'no', label: 'No estoy seguro'},
-      {value: 'remind', label: 'Recuérdenme por favor'},
-      {value: 'yes', label: 'Si, atento!'},
-    ],
-    cols: 1,
-  },
+  // {
+  //   name: 'commitment',
+  //   title: '¿Prometes atender a la sesión que estás a punto de agendar?',
+  //   description: 'Es que no nos gusta que nos dejen plantados',
+  //   type: 'radio',
+  //   inputOptions: {required: 'Selecciona una opción'},
+  //   options: [
+  //     {value: 'no', label: 'No estoy seguro'},
+  //     {value: 'remind', label: 'Recuérdenme por favor'},
+  //     {value: 'yes', label: 'Si, atento!'},
+  //   ],
+  //   cols: 1,
+  // },
 ];
 
 export default function Survey() {
